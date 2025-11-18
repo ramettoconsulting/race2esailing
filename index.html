@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <title>Sailing Game</title>
     <style>
         * {
@@ -15,10 +15,18 @@
             font-family: Arial, sans-serif;
             overflow: hidden;
             height: 100vh;
+            height: 100dvh; /* Dynamic viewport height for mobile browsers */
             display: flex;
             flex-direction: column;
             background: #87CEEB;
             position: relative;
+        }
+        
+        /* Fix for iOS Safari */
+        @supports (-webkit-touch-callout: none) {
+            body {
+                height: -webkit-fill-available;
+            }
         }
 
         /* Title at top */
@@ -88,10 +96,19 @@
 
         /* Game screen - takes up most of the space */
         #gameContainer {
-            flex: 1;
+            flex: 1 1 auto;
             width: 100%;
             position: relative;
             min-height: 0; /* Important for flexbox */
+            max-height: calc(100vh - 200px); /* Reserve space for title and UI */
+            overflow: hidden;
+        }
+        
+        /* Fix for iOS Safari */
+        @supports (-webkit-touch-callout: none) {
+            #gameContainer {
+                max-height: calc(-webkit-fill-available - 200px);
+            }
         }
 
         /* Button container - below game screen */
@@ -103,6 +120,9 @@
             align-items: center;
             gap: 15px;
             min-height: fit-content;
+            flex-shrink: 0; /* Prevent UI container from shrinking */
+            z-index: 100; /* Ensure it's above game container */
+            position: relative;
         }
 
         .maneuver-text {
@@ -160,9 +180,31 @@
 
         /* Mobile optimizations */
         @media (max-width: 768px) {
+            body {
+                height: 100vh;
+                height: 100dvh;
+            }
+            
+            @supports (-webkit-touch-callout: none) {
+                body {
+                    height: -webkit-fill-available;
+                }
+            }
+            
+            #gameContainer {
+                max-height: calc(100vh - 180px);
+            }
+            
+            @supports (-webkit-touch-callout: none) {
+                #gameContainer {
+                    max-height: calc(-webkit-fill-available - 180px);
+                }
+            }
+            
             #ui-container {
                 padding: 15px;
                 gap: 10px;
+                flex-shrink: 0;
             }
 
             #maneuver-display {
@@ -188,8 +230,19 @@
 
         /* Very small screens */
         @media (max-width: 480px) {
+            #gameContainer {
+                max-height: calc(100vh - 160px);
+            }
+            
+            @supports (-webkit-touch-callout: none) {
+                #gameContainer {
+                    max-height: calc(-webkit-fill-available - 160px);
+                }
+            }
+            
             #ui-container {
                 padding: 10px;
+                flex-shrink: 0;
             }
 
             #maneuver-display {
@@ -208,7 +261,7 @@
     <div id="title">Ilya's race</div>
     
     <!-- Maneuver display - right under title, on top of game container -->
-    <div id="maneuver-display"></div>
+                <div id="maneuver-display"></div>
     
     <!-- Game screen - above -->
     <div id="gameContainer"></div>
