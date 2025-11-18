@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: linear-gradient(to bottom, #4facfe 0%, #00f2fe 50%, #0099cc 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.game-container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    max-width: 1400px;
+    width: 100%;
+}
+
+.ui-panel {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    padding: 20px;
+    min-width: 300px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.maneuvers {
+    margin-bottom: 20px;
+    min-height: 150px;
+}
+
+#maneuver-display {
+    font-size: 1.1rem;
+    padding: 15px;
+    border-radius: 8px;
+    background: #f0f8ff;
+    border: 2px solid #0099cc;
+    color: #333;
+    line-height: 1.6;
+    min-height: 120px;
+}
+
+#maneuver-display .maneuver-title {
+    font-weight: bold;
+    color: #0099cc;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+#maneuver-display .maneuver-text {
+    color: #555;
+    font-style: italic;
+}
+
+.instructions {
+    padding: 15px;
+    background: #e8f4f8;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#maneuver-button {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 0.95rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    width: 100%;
+    font-weight: 500;
+}
+
+#maneuver-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+#maneuver-button:active {
+    transform: translateY(0);
+}
+
+#maneuver-button:disabled {
+    background: #cccccc;
+    cursor: not-allowed;
+    transform: none;
+}
+
+#gameContainer {
+    width: 900px;
+    height: 600px;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    overflow: hidden;
+}
+
+#gameContainer canvas {
+    display: block;
+    border-radius: 12px;
+}
