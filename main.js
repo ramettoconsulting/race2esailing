@@ -67,38 +67,38 @@ const game = {
 // MANEUVERS DATA
 // ============================================================================
 const maneuversData = [
-    { leg: "Start", type: "Start", number: 1, text: "START GUN: Ilya started coding simple games as a hobby when he was a kid" },
+    { leg: "Start", type: "Start", number: 1, text: "START LINE: Ilya started coding simple games as a kid as his hobby" },
 
-    { leg: "Upwind 1", type: "Tack", number: 1, text: "LEG 1: Technology and marketing background" },
-    { leg: "Upwind 1", type: "Tack", number: 2, text: "Ilya went to university and got MSc in Computer Science" },
-    { leg: "Upwind 1", type: "Tack", number: 3, text: "Later got Bachelors degree in Marketing and Strategy" },
-    { leg: "Upwind 1", type: "Tack", number: 4, text: "Worked for 11 years in big corporations (Nokia, Microsoft)" },
-    { leg: "Upwind 1", type: "Tack", number: 5, text: "Then for 6 years as independent consultant" },
+    { leg: "Upwind 1", type: "Tack", number: 1, text: "LEG 1: Technology and Marketing Background" },
+    { leg: "Upwind 1", type: "Tack", number: 2, text: "Hobby became a profession when Ilya got MSc in Computer Science" },
+    { leg: "Upwind 1", type: "Tack", number: 3, text: "Changing tacks years later he got a Bachelor's degree in Marketing and Strategy" },
+    { leg: "Upwind 1", type: "Tack", number: 4, text: "Worked for 11 years for big corp (Nokia, Microsoft)" },
+    { leg: "Upwind 1", type: "Tack", number: 5, text: "Then changed tack again for 6 years as an independent consultant" },
     { leg: "Upwind 1", type: "Tack", number: 6, text: "Currently working as a product architect in a fintech startup" },
 
-    { leg: "Downwind 1", type: "Gybe", number: 1, text: "LEG 2: Sailing, Umpiring and World Sailing committees" },
-    { leg: "Downwind 1", type: "Gybe", number: 2, text: "Ilya started sailing and racing as an adult" },
-    { leg: "Downwind 1", type: "Gybe", number: 3, text: "Got interested in match racing, and this led to umpiring" },
-    { leg: "Downwind 1", type: "Gybe", number: 4, text: "Was appointed as an International Umpire since 2019" },
-    { leg: "Downwind 1", type: "Gybe", number: 5, text: "Currently pursuing International Judge appointment" },
-    { leg: "Downwind 1", type: "Gybe", number: 6, text: "From 2025 a member of the IUSC Umpire Documents Working Group in World Sailing" },
-    { leg: "Downwind 1", type: "Gybe", number: 7, text: "Also coaching adult sailors in a local sailing club in Helsinki" },
+    { leg: "Downwind 1", type: "Gybe", number: 1, text: "LEG 2: Sailing, Umpiring and World Sailing Experience" },
+    { leg: "Downwind 1", type: "Gybe", number: 2, text: "Ilya started sailing and racing as an adult in 2008" },
+    { leg: "Downwind 1", type: "Gybe", number: 3, text: "With keen interest in match racing he decided to learn umpiring" },
+    { leg: "Downwind 1", type: "Gybe", number: 4, text: "Was appointed as an International Umpire since 2019..." },
+    { leg: "Downwind 1", type: "Gybe", number: 5, text: "...and currently pursuing an International Judge appointment" },
+    { leg: "Downwind 1", type: "Gybe", number: 6, text: "From 2025 a member of the IUSC Umpire Documents Working Group" },
+    { leg: "Downwind 1", type: "Gybe", number: 7, text: "After work hours coaching adult sailors in a local sailing club" },
 
-    { leg: "Upwind 2", type: "Tack", number: 1, text: "LEG 3: eSailing background" },
-    { leg: "Upwind 2", type: "Tack", number: 2, text: "Ilya started eSailing in Hydrofoil Generation sim game a couple of years ago" },
-    { leg: "Upwind 2", type: "Tack", number: 3, text: "Got involved soon in a discord community around the game" },
-    { leg: "Upwind 2", type: "Tack", number: 4, text: "The community started a grass-root SailGP-like league in March 2025" },
-    { leg: "Upwind 2", type: "Tack", number: 5, text: "and Ilya joined as an umpire" },
-    { leg: "Upwind 2", type: "Tack", number: 6, text: "After running 7 events in 2025, he is taking OA/Race Management/Umpire role for season 2026 " },
-    { leg: "Upwind 2", type: "Tack", number: 7, text: "Planning 13 events next year, preparing format, scoring system, rules, NoR, SI, etc" },
+    { leg: "Upwind 2", type: "Tack", number: 1, text: "LEG 3: eSailing Community Involvement" },
+    { leg: "Upwind 2", type: "Tack", number: 2, text: "Ilya started playing Hydrofoil Generation sim game a couple of years ago" },
+    { leg: "Upwind 2", type: "Tack", number: 3, text: "Naturally got involved in a discord community around the game" },
+    { leg: "Upwind 2", type: "Tack", number: 4, text: "The community started an unofficial, grass-root SailGP-like league early 2025" },
+    { leg: "Upwind 2", type: "Tack", number: 5, text: "...and Ilya joined as an umpire for all 7 events" },
+    { leg: "Upwind 2", type: "Tack", number: 6, text: "For 2026 season will be helping the community with OA/Race Management/Umpire" },
+    { leg: "Upwind 2", type: "Tack", number: 7, text: "Excited for 13 events next year and preparing format, scoring system, rules, NoR, SI, etc" },
 
     { leg: "Downwind 2", type: "Gybe", number: 1, text: "LEG 4: Motivation for eSailing Commission" },
-    { leg: "Downwind 2", type: "Gybe", number: 2, text: "As a sailor, coach and umpire, i see eSailing as a great way to learn and improve sailing skills IRL" },
-    { leg: "Downwind 2", type: "Gybe", number: 3, text: "eSailing simulators help to learn new boats and practice between events or offseason" },
-    { leg: "Downwind 2", type: "Gybe", number: 4, text: "Similators in America's Cup and SailGP are a target benchmark, but eSailing can make it more accessible" },
-    { leg: "Downwind 2", type: "Gybe", number: 5, text: "Gaming is a great way to engage young people" },
-    { leg: "Downwind 2", type: "Gybe", number: 6, text: "It is also inclusive and can open the world of sailing to invlusive talents who can compete with everyone" },
-    { leg: "Downwind 2", type: "Gybe", number: 7, text: "FINISH: Hope my background in technology, marketing, sailing, coaching and race officiating can be useful for eSailing Commission" },
+    { leg: "Downwind 2", type: "Gybe", number: 2, text: "After a year in our Discord community I see so much value in eSailing" },
+    { leg: "Downwind 2", type: "Gybe", number: 3, text: "Group have Nacra 17 Olympic Sailors and the AC e-Series winner/finalists..." },
+    { leg: "Downwind 2", type: "Gybe", number: 4, text: "... playing alongside with regular club sailors and sim enthusiasts" },
+    { leg: "Downwind 2", type: "Gybe", number: 5, text: "All ages across the globe improve the skills, learn rules and have fun" },
+    { leg: "Downwind 2", type: "Gybe", number: 6, text: "Opportunities for inclusivity and balanced gender representation are there." },
+    { leg: "Downwind 2", type: "Gybe", number: 7, text: "FINISH LINE: WS can advance benefits and excitement of eSailing, and I would love to be a part of it" },
 ];
 
 // ============================================================================
@@ -988,9 +988,9 @@ function showPDFButton() {
         pdfButton = document.createElement('button');
         pdfButton.id = 'pdf-button';
         pdfButton.className = 'pdf-button';
-        pdfButton.textContent = 'Open PDF';
+        pdfButton.textContent = 'Cover Letter and CV';
         pdfButton.addEventListener('click', function() {
-            window.open('https://drive.google.com/file/d/19UgZEUuysoTidSh8ZN_IE-EG2Gv6uEck/view?usp=drive_link', '_blank');
+            window.open('https://drive.google.com/file/d/1LhMOxmftbgSW0wUxt9C5AmLJOVPCU7UE/view', '_blank');
         });
         const buttonContainer = document.getElementById('button-container');
         if (buttonContainer) {
